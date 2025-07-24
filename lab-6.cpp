@@ -17,9 +17,9 @@ void displayData(int a[4][4])
 {
     for (int i = 0; i <= 3; i++)
     {
-        for (int j = 0; i <= 3; j++)
+        for (int j = 0; j <= 3; j++)
         {
-            cout << a[i][j];
+            cout << a[i][j] << " ";
         }
         cout << endl;
     }
@@ -43,10 +43,14 @@ int main()
 {
     int arr[4][4];
     getData(arr);
-    cout << " Original Matix" << endl;
+
+    cout << "Original Matrix:\n";
     displayData(arr);
+
     transposeData(arr);
-    cout << " Tranpose Matix" << endl;
+
+    cout << "Transposed Matrix:\n";
     displayData(arr);
+
     return 0;
 }
