@@ -3,7 +3,7 @@
 #include <cctype> // for tolower
 using namespace std;
 
-void compareString(char *arr1, char *arr2, int size)
+void compareString(char *arr1, char *arr2, int size) //	int array[] or int* array, ❌ Not required, 	Acts like pointer
 {
     int i = 0; // Start from index 0
     int flag = 0;

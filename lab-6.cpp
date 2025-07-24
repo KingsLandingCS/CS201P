@@ -1,7 +1,7 @@
 #include <iostream>
 using namespace std;
 
-void getData(int a[4][4])
+void getData(int a[4][4]) // int a[][4] or int a[4][4], ✅ Second dimension is required
 {
     for (int i = 0; i <= 3; i++)
     {
