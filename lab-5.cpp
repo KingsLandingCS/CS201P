@@ -1,27 +1,30 @@
 #include <iostream>
 #include <string.h>
+#include <cctype> // for tolower
 using namespace std;
 
 void compareString(char *arr1, char *arr2, int size)
 {
-    int i = 1;
+    int i = 0; // Start from index 0
     int flag = 0;
-    while (i <= size)
+
+    while (i < size)
     {
-        if (arr1[i] != arr2[i])
+        if (tolower(arr1[i]) != tolower(arr2[i]))
         {
             flag = 1;
             break;
         }
         i++;
     }
+
     if (flag == 0)
     {
         cout << "Both Arrays are same" << endl;
     }
     else
     {
-        cout << "Both Arrays are not same: " << endl;
+        cout << "Both Arrays are not same" << endl;
     }
 }
 
@@ -41,7 +44,7 @@ int main()
     }
     else
     {
-        cout << "Size of Both Array are not same";
+        cout << "Size of Both Arrays are not same" << endl;
     }
 
     return 0;
