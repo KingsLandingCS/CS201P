@@ -12,6 +12,8 @@ Test addData(Test T1, Test T2)
     Test T3;
     T3.a = T1.a + T2.a;
     T3.b = T1.b + T2.b;
+
+    return T3;
 }
 
 int main()
@@ -44,5 +46,8 @@ int main()
     // Sum of T1 & T2
     Test T3 = addData(T1, T2);
 
+    // Display Sum Record
+    cout << "Sum of T1 & T2";
+    cout << "T3 -> a = " << T3.a << "\tT3 -> b = " << T3.b << endl;
     return 0;
 }
