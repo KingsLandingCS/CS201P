@@ -18,7 +18,7 @@ int main()
     // Calculate Average
     double averageAge = static_cast<double>(totalAge) / numberOfStudents;
 
-    cout << "Average aeg of " << numberOfStudents << " Students is: " << averageAge << endl;
+    cout << "Average age of " << numberOfStudents << " Students is: " << averageAge << endl;
 
     return 0;
 }
