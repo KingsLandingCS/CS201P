@@ -17,6 +17,18 @@ public:
         cout << "this ->numb: " << numb.n << endl;
         return Number(this->n + numb.n);
     }
+
+    bool operator==(const Number &numb)
+    {
+        if (this->n == numb.n)
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
 };
 
 int main()
@@ -26,6 +38,17 @@ int main()
     Number c = a + b;
 
     cout << "c.n:" << c.n << endl;
+
+    if (a == c)
+        cout << "a==c" << endl;
+    else
+        cout << "a != c" << endl;
+
+    Number d(15);
+    if (c == d)
+        cout << " c == d" << endl;
+    else
+        cout << "c !=d" << endl;
     return 0;
 }
 
