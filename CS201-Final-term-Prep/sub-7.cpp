@@ -19,7 +19,7 @@ int main()
 
 // When this function is called with an integer 5, like reciprocal(5), the template type T will be deduced as int.
 
-// nside the function, 1/x will be 1/5. In integer division (which is performed when both operands are integers), the result is the quotient without any fractional part (it truncates towards zero).
+// Inside the function, 1/x will be 1/5. In integer division (which is performed when both operands are integers), the result is the quotient without any fractional part (it truncates towards zero).
 
 // Therefore, 1/5 as integer division results in 0.
 
