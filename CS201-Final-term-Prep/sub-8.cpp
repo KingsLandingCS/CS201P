@@ -27,6 +27,11 @@ int main()
     return 0;
 }
 
+// ✅ Operator Overloading in C++
+// Operator overloading is a feature in C++ that allows you to redefine the meaning of an operator (like +, -, *, etc.) so it can work with your own custom classes — not just built-in data types.
+
+// 💡 In simple terms:
+// Operator overloading lets you use operators like + or - with objects, just like you do with int, float, etc.
 
 // return Number(this->n + numb.n);
 // This line is inside the overloaded + operator function. Here's what it's doing step by step:
