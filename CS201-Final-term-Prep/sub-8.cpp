@@ -13,6 +13,8 @@ public:
 
     Number operator+(const Number &numb)
     {
+        cout << "this ->n: " << this->n << endl;
+        cout << "this ->numb: " << numb.n << endl;
         return Number(this->n + numb.n);
     }
 };
